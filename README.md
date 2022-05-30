@@ -1,6 +1,8 @@
 # Wer wird Millionäre  / Get Millionare
 
 
+![featured_graphic-2](https://user-images.githubusercontent.com/55493271/170965733-aca5604d-f7a3-4005-9b25-d6f8dcb5cca0.png)
+
 Bestes Quiz- und Quizspiel. Zeigen Sie Ihre Intelligenz, Ihr Wissen und Ihre Bildung
 
 Would you like to become a virtual millionaire by having fun and learning at the same time! Then The Millionaire game is just for you. You can learn new information on many subjects by answering questions in this game, inspired by competitions that attract millions of people around the world.
@@ -61,7 +63,7 @@ Sign Up mit Google Konto oder Email
 
 
 
-![featured_graphic-2](https://user-images.githubusercontent.com/55493271/170965733-aca5604d-f7a3-4005-9b25-d6f8dcb5cca0.png)
+
 
 
 
