@@ -39,3 +39,25 @@ Game Features
 5) New opportunities can be obtained by using diamonds.
 6) Ranking can be seen from the leaderboard.
 7) There is a 1 million dollar (virtual) prize at the end of the competition.
+
+
+
+
+
+Technische Eigenschaften 
+
+Java, 
+SQLite, 
+Firebase, 
+Music Player, 
+Levels, 
+Professioneles Design, 
+Score Board, 
+Kontakt Formular,
+In-App Purchase, 
+AdMob Integration, 
+Sign Up mit Google Konto oder Email 
+
+
+
+
