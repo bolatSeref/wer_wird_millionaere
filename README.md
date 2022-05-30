@@ -57,10 +57,11 @@ Kontakt Formular,
 In-App Purchase, 
 AdMob Integration, 
 Sign Up mit Google Konto oder Email 
-![unnamed](https://user-images.githubusercontent.com/55493271/170963588-5cec97eb-f28e-4ee2-8bf2-49f9f6964bb8.png)
 
 
 
+
+![featured_graphic-2](https://user-images.githubusercontent.com/55493271/170965733-aca5604d-f7a3-4005-9b25-d6f8dcb5cca0.png)
 
 
 
