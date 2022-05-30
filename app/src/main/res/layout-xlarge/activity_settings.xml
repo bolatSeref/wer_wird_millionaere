@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.SettingsActivity"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/bg_game">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="327dp"
+        android:layout_height="473dp"
+        android:background="@drawable/bg_popup_settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgSettingsClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:onClick="settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close_white" />
+
+        <ImageView
+            android:id="@+id/imgSetSound"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="58dp"
+            android:onClick="settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btn_blue_settings" />
+
+        <ImageView
+            android:id="@+id/imgSetLanguage"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="19dp"
+            android:onClick="settings"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSetSound"
+            app:srcCompat="@drawable/btn_blue_settings" />
+
+        <ImageView
+            android:id="@+id/imgLogin"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="19dp"
+            android:onClick="settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSetLanguage"
+            app:srcCompat="@drawable/btn_blue_settings" />
+
+        <ImageView
+            android:id="@+id/imgShareApp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="19dp"
+            android:onClick="settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogin"
+            app:srcCompat="@drawable/btn_blue_settings" />
+
+        <ImageView
+            android:id="@+id/imgRateUs"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="19dp"
+            android:onClick="settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgShareApp"
+            app:srcCompat="@drawable/btn_blue_settings" />
+
+        <ImageView
+            android:id="@+id/imgCreactiveStudio"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgRateUs"
+            app:srcCompat="@drawable/btn_green_settings"
+            android:onClick="settings" />
+
+        <ImageView
+            android:id="@+id/imgActionSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSetSound"
+            app:layout_constraintStart_toStartOf="@+id/imgSetSound"
+            app:layout_constraintTop_toTopOf="@+id/imgSetSound"
+            app:srcCompat="@drawable/ic_sound_on" />
+
+        <TextView
+            android:id="@+id/tvActionSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/sound_on"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSetSound"
+            app:layout_constraintEnd_toEndOf="@+id/imgSetSound"
+            app:layout_constraintStart_toStartOf="@+id/imgSetSound"
+            app:layout_constraintTop_toTopOf="@+id/imgSetSound" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSetLanguage"
+            app:layout_constraintStart_toStartOf="@+id/imgSetLanguage"
+            app:layout_constraintTop_toTopOf="@+id/imgSetLanguage"
+            app:srcCompat="@drawable/ic_language" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/language"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSetLanguage"
+            app:layout_constraintStart_toStartOf="@+id/tvActionSound"
+            app:layout_constraintTop_toTopOf="@+id/imgSetLanguage" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLogin"
+            app:layout_constraintStart_toStartOf="@+id/imgLogin"
+            app:layout_constraintTop_toTopOf="@+id/imgLogin"
+            app:srcCompat="@drawable/ic_login" />
+
+        <TextView
+            android:id="@+id/tvSettingsLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/login"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLogin"
+            app:layout_constraintEnd_toEndOf="@+id/imgLogin"
+            app:layout_constraintStart_toStartOf="@+id/imgLogin"
+            app:layout_constraintTop_toTopOf="@+id/imgLogin" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareApp"
+            app:layout_constraintStart_toStartOf="@+id/imgShareApp"
+            app:layout_constraintTop_toTopOf="@+id/imgShareApp"
+            app:srcCompat="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/share"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareApp"
+            app:layout_constraintEnd_toEndOf="@+id/imgShareApp"
+            app:layout_constraintStart_toStartOf="@+id/imgShareApp"
+            app:layout_constraintTop_toTopOf="@+id/imgShareApp" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRateUs"
+            app:layout_constraintStart_toStartOf="@+id/imgRateUs"
+            app:layout_constraintTop_toTopOf="@+id/imgRateUs"
+            app:srcCompat="@drawable/ic_rate" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_us"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRateUs"
+            app:layout_constraintEnd_toEndOf="@+id/imgRateUs"
+            app:layout_constraintStart_toStartOf="@+id/imgRateUs"
+            app:layout_constraintTop_toTopOf="@+id/imgRateUs"
+            android:fontFamily="@font/bold" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/black"
+            android:text="@string/creactive_studio"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCreactiveStudio"
+            app:layout_constraintEnd_toEndOf="@+id/imgCreactiveStudio"
+            app:layout_constraintStart_toStartOf="@+id/imgCreactiveStudio"
+            app:layout_constraintTop_toTopOf="@+id/imgCreactiveStudio" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_test_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

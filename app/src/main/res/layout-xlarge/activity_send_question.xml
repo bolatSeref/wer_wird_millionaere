@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game"
+    tools:context=".user_inputs.SendQuestionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="0dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_popup_send_question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgSendQuestionClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="cancelClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/submit_a_question_and_earn_germs"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etQuestionFromUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/input1_send_question"
+            android:ems="10"
+            android:fontFamily="@font/medium"
+            android:gravity="start|top"
+            android:hint="@string/type_your_question"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:paddingRight="3dp"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+        <EditText
+            android:id="@+id/etChoiceAfromUser"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/input2_send_question"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/type_option_a"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="3dp"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etQuestionFromUser" />
+
+        <EditText
+            android:id="@+id/etChoiceBfromUser"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/input2_send_question"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/type_option_b"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="3dp"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etChoiceAfromUser" />
+
+        <EditText
+            android:id="@+id/etChoiceCfromUser"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/input2_send_question"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/type_option_c"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="3dp"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etChoiceBfromUser" />
+
+        <EditText
+            android:id="@+id/etChoiceDfromUser"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/input2_send_question"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="@string/type_option_d"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="3dp"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etChoiceCfromUser" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etChoiceDfromUser" />
+
+        <ImageView
+            android:id="@+id/imgDiscard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:onClick="cancelClick"
+            app:layout_constraintEnd_toStartOf="@+id/imgSaveQuestion"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etChoiceDfromUser"
+            app:srcCompat="@drawable/btn_discard_send_question" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/discard"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgDiscard"
+            app:layout_constraintEnd_toEndOf="@+id/imgDiscard"
+            app:layout_constraintStart_toStartOf="@+id/imgDiscard"
+            app:layout_constraintTop_toTopOf="@+id/imgDiscard" />
+
+        <ImageView
+            android:id="@+id/imgSaveQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendQuestionClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgDiscard"
+            app:layout_constraintTop_toTopOf="@+id/imgDiscard"
+            app:srcCompat="@drawable/btn_send_question" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/send"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSaveQuestion"
+            app:layout_constraintEnd_toEndOf="@+id/imgSaveQuestion"
+            app:layout_constraintStart_toStartOf="@+id/imgSaveQuestion"
+            app:layout_constraintTop_toTopOf="@+id/imgSaveQuestion" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/etChoiceDfromUser"
+            app:layout_constraintTop_toBottomOf="@+id/etChoiceDfromUser">
+
+            <RadioButton
+                android:id="@+id/rbA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="A"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="B"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="C"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="D"
+                android:textColor="#FFFFFF" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/medium"
+            android:text="@string/select_right_choice"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroupChoice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/radioGroupChoice" />
+
+        <Button
+            android:id="@+id/btnSendQuestionAsAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendQuestionAsAdmin"
+            android:text="@string/send_question_as_admin"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="445dp" />
+
+        <EditText
+            android:id="@+id/etQuestionLevel"
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroupLanguage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/english"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioTurkish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/turkish"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

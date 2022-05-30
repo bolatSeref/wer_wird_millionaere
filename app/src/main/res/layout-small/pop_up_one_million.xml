@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="327dp"
+        android:layout_height="600dp"
+        android:background="@drawable/bg_popup_game_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_popup_1million"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView549"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/congragulations"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView99"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@+id/imageView99"
+            app:layout_constraintTop_toTopOf="@+id/imageView99"
+            app:layout_constraintVertical_bias="0.766" />
+
+        <TextView
+            android:id="@+id/textView649"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            android:text="@string/you_won_one_million"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView99" />
+
+        <ImageView
+            android:id="@+id/imgHomeOneMillion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView649"
+            app:srcCompat="@drawable/btn_blue_game_end" />
+
+        <ImageView
+            android:id="@+id/imgShareOneMillion"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHomeOneMillion"
+            app:srcCompat="@drawable/btn_blue_game_end" />
+
+        <ImageView
+            android:id="@+id/imgReportMistakeOneMillion"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgShareOneMillion"
+            app:srcCompat="@drawable/btn_blue_game_end" />
+
+        <ImageView
+            android:id="@+id/imgNewGameOneMillion"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgReportMistakeOneMillion"
+            app:srcCompat="@drawable/btn_green_game_end" />
+
+        <ImageView
+            android:id="@+id/imageView399"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgHomeOneMillion"
+            app:layout_constraintStart_toStartOf="@+id/imgHomeOneMillion"
+            app:layout_constraintTop_toTopOf="@+id/imgHomeOneMillion"
+            app:srcCompat="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/textView669"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="@string/home"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgHomeOneMillion"
+            app:layout_constraintEnd_toEndOf="@+id/imgHomeOneMillion"
+            app:layout_constraintStart_toStartOf="@+id/imgHomeOneMillion"
+            app:layout_constraintTop_toTopOf="@+id/imgHomeOneMillion" />
+
+        <ImageView
+            android:id="@+id/imageView409"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareOneMillion"
+            app:layout_constraintStart_toStartOf="@+id/imgShareOneMillion"
+            app:layout_constraintTop_toTopOf="@+id/imgShareOneMillion"
+            app:srcCompat="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/textView679"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="@string/share_for_gems"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareOneMillion"
+            app:layout_constraintEnd_toEndOf="@+id/imgShareOneMillion"
+            app:layout_constraintStart_toStartOf="@+id/imgShareOneMillion"
+            app:layout_constraintTop_toTopOf="@+id/imgShareOneMillion" />
+
+        <ImageView
+            android:id="@+id/imageView419"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareOneMillion"
+            app:layout_constraintEnd_toEndOf="@+id/imgShareOneMillion"
+            app:layout_constraintTop_toTopOf="@+id/imgShareOneMillion"
+            app:srcCompat="@drawable/ic_gem" />
+
+        <ImageView
+            android:id="@+id/imageView429"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgReportMistakeOneMillion"
+            app:layout_constraintStart_toStartOf="@+id/imgReportMistakeOneMillion"
+            app:layout_constraintTop_toTopOf="@+id/imgReportMistakeOneMillion"
+            app:srcCompat="@drawable/ic_report_mistake" />
+
+        <TextView
+            android:id="@+id/textView689"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:text="@string/report_a_mistake"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgReportMistakeOneMillion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgReportMistakeOneMillion" />
+
+        <TextView
+            android:id="@+id/textView699"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/new_game_text"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNewGameOneMillion"
+            app:layout_constraintEnd_toEndOf="@+id/imgNewGameOneMillion"
+            app:layout_constraintStart_toStartOf="@+id/imgNewGameOneMillion"
+            app:layout_constraintTop_toTopOf="@+id/imgNewGameOneMillion" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

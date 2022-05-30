@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".GameActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="backArrowClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/timer_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="30"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imgTimerCircle"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:background="@drawable/timer_sec_30"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="@+id/tvTimer"
+            app:layout_constraintStart_toStartOf="@+id/tvTimer"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imgGems"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@+id/imgTimerCircle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/area_points" />
+
+        <TextView
+            android:id="@+id/tvGems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="70"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/imgGems"
+            app:layout_constraintEnd_toEndOf="@+id/imgGems"
+            app:layout_constraintStart_toStartOf="@+id/imgGems"
+            app:layout_constraintTop_toTopOf="@+id/imgGems" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imgQuestionPanel"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:srcCompat="@drawable/panel_question_large" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:fontFamily="@font/bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgQuestionPanel"
+        app:layout_constraintStart_toStartOf="@+id/imgQuestionPanel"
+        app:layout_constraintTop_toTopOf="@+id/imgQuestionPanel" />
+
+    <TextView
+        android:id="@+id/tvCurrentLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/five_hundred_dollar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgQuestionPanel"
+        app:layout_constraintStart_toStartOf="@+id/imgQuestionPanel"
+        app:layout_constraintTop_toTopOf="@+id/imgQuestionPanel" />
+
+    <TextView
+        android:id="@+id/tvQuestionFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:text="1 / 13"
+        android:textColor="#F9E34D"
+        app:layout_constraintEnd_toEndOf="@+id/imgQuestionPanel"
+        app:layout_constraintStart_toStartOf="@+id/imgQuestionPanel"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrentLevel" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuestionPanel">
+
+        <ImageView
+            android:id="@+id/imgChoiceA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/answer_unselected"
+            android:onClick="userChoiceClick"
+            android:tag="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="78dp"
+            android:text="A :"
+            android:textColor="@color/unselected_choice"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChoiceA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgChoiceA" />
+
+        <ImageView
+            android:id="@+id/imgChoiceB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/answer_unselected"
+            android:onClick="userChoiceClick"
+            android:tag="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgChoiceA" />
+
+        <TextView
+            android:id="@+id/tvChoiceA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:tag="0"
+            android:text="ChoiceA"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChoiceA"
+            app:layout_constraintEnd_toEndOf="@+id/imgChoiceA"
+            app:layout_constraintStart_toStartOf="@+id/imgChoiceA"
+            app:layout_constraintTop_toTopOf="@+id/imgChoiceA" />
+
+        <TextView
+            android:id="@+id/tvB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B :"
+            android:textColor="@color/unselected_choice"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChoiceB"
+            app:layout_constraintStart_toStartOf="@+id/tvA"
+            app:layout_constraintTop_toTopOf="@+id/imgChoiceB" />
+
+        <TextView
+            android:id="@+id/tvChoiceB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/medium"
+            android:tag="1"
+            android:text="choiceB"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChoiceB"
+            app:layout_constraintEnd_toEndOf="@+id/imgChoiceB"
+            app:layout_constraintStart_toStartOf="@+id/imgChoiceB"
+            app:layout_constraintTop_toTopOf="@+id/imgChoiceB" />
+
+        <ImageView
+            android:id="@+id/imgChoiceC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/answer_unselected"
+            android:onClick="userChoiceClick"
+            android:tag="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgChoiceB" />
+
+        <TextView
+            android:id="@+id/tvC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C :"
+            android:textColor="@color/unselected_choice"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChoiceC"
+            app:layout_constraintStart_toStartOf="@+id/tvB"
+            app:layout_constraintTop_toTopOf="@+id/imgChoiceC" />
+
+        <TextView
+            android:id="@+id/tvChoiceC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/medium"
+            android:tag="2"
+            android:text="ChoiceC"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChoiceC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imgChoiceC"
+            app:layout_constraintTop_toTopOf="@+id/imgChoiceC" />
+
+        <ImageView
+            android:id="@+id/imgChoiceD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/answer_unselected"
+            android:onClick="userChoiceClick"
+            android:tag="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgChoiceC" />
+
+        <TextView
+            android:id="@+id/tvD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D :"
+            android:textColor="@color/unselected_choice"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChoiceD"
+            app:layout_constraintStart_toStartOf="@+id/tvC"
+            app:layout_constraintTop_toTopOf="@+id/imgChoiceD" />
+
+        <TextView
+            android:id="@+id/tvChoiceD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:tag="3"
+            android:text="ChoiceD"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChoiceD"
+            app:layout_constraintEnd_toEndOf="@+id/imgChoiceD"
+            app:layout_constraintStart_toStartOf="@+id/imgChoiceD"
+            app:layout_constraintTop_toTopOf="@+id/imgChoiceD" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <ImageView
+            android:id="@+id/imgFiftyFiftyJoker"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="jokerClick"
+            android:tag="0"
+            app:srcCompat="@drawable/joker_fifty_fifty_active" />
+
+        <ImageView
+            android:id="@+id/imgPhoneJoker"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="jokerClick"
+            android:tag="1"
+            app:srcCompat="@drawable/joker_phone_active" />
+
+        <ImageView
+            android:id="@+id/imgAudienceJoker"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="jokerClick"
+            android:tag="2"
+            app:srcCompat="@drawable/joker_audience_active" />
+
+        <ImageView
+            android:id="@+id/imgDoubleJoker"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="jokerClick"
+            android:tag="3"
+            app:srcCompat="@drawable/joker_half_active" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consLayPhoneJokerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuestionPanel">
+
+        <TextView
+            android:id="@+id/tvPhoneJokerCorrectChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="B"
+            android:textColor="#6DBF2A"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+            app:layout_constraintEnd_toEndOf="@+id/imageView16"
+            app:layout_constraintStart_toStartOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/box_answer_phone" />
+
+        <TextView
+            android:id="@+id/tvEinsteinText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="@string/i_am_pretty_sure_the_correct_answer_is"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bg_joker_phone" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_joker_phone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consLayAudienceJokerView"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_joker_audience"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuestionPanel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/bold"
+                android:text="A"
+                android:textAlignment="textStart"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgAudienceGraphA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/joker_audience_low" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/bold"
+                android:text="B"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgAudienceGraphB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/joker_audience_high" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/bold"
+                android:text="C"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgAudienceGraphC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/joker_audience_low" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/bold"
+                android:text="D"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgAudienceGraphD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/joker_audience_low" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_test_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

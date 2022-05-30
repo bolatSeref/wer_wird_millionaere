@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp">
+
+    <ImageView
+        android:id="@+id/imageViewBgExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_popup_leave" />
+
+    <TextView
+        android:id="@+id/tvExit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/leave_with_money_title"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBgExit" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/regular"
+        android:text="@string/leave_with_money"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBgExit"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBgExit"
+        app:layout_constraintTop_toBottomOf="@+id/tvExit" />
+
+    <ImageView
+        android:id="@+id/imgCloseLeaveWithMoney"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:onClick="closeTimeUpPopUp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExit"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBgExit"
+        app:layout_constraintTop_toTopOf="@+id/tvExit"
+        app:srcCompat="@drawable/ic_close" />
+
+    <ImageView
+        android:id="@+id/imgYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBgExit"
+        app:layout_constraintTop_toTopOf="@+id/imgNo"
+        app:srcCompat="@drawable/btn_blue" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="@string/yes"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgYes"
+        app:layout_constraintEnd_toEndOf="@+id/imgYes"
+        app:layout_constraintStart_toStartOf="@+id/imgYes"
+        app:layout_constraintTop_toTopOf="@+id/imgYes" />
+
+    <ImageView
+        android:id="@+id/imgNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="178dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBgExit"
+        app:layout_constraintTop_toBottomOf="@+id/tvExit"
+        app:srcCompat="@drawable/btn_dark" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="@string/no"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgNo"
+        app:layout_constraintEnd_toEndOf="@+id/imgNo"
+        app:layout_constraintStart_toStartOf="@+id/imgNo"
+        app:layout_constraintTop_toTopOf="@+id/imgNo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

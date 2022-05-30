@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewBgExit"
+        android:layout_width="327dp"
+        android:layout_height="234dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_exit_dialog" />
+
+    <TextView
+        android:id="@+id/tvExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/app_name_all_caps"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBgExit"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBgExit" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/regular"
+        android:text="@string/are_you_sure_you_want_to_exit"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBgExit"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBgExit"
+        app:layout_constraintTop_toBottomOf="@+id/tvExit" />
+
+    <ImageView
+        android:id="@+id/imgCloseExit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="21dp"
+        android:onClick="closeTimeUpPopUp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExit"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBgExit"
+        app:layout_constraintTop_toTopOf="@+id/tvExit"
+        app:srcCompat="@drawable/ic_close" />
+
+    <ImageView
+        android:id="@+id/imgExitApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBgExit"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        app:srcCompat="@drawable/btn_blue" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="@string/exit"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgExitApp"
+        app:layout_constraintEnd_toEndOf="@+id/imgExitApp"
+        app:layout_constraintStart_toStartOf="@+id/imgExitApp"
+        app:layout_constraintTop_toTopOf="@+id/imgExitApp" />
+
+    <ImageView
+        android:id="@+id/imgRateUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="57dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBgExit"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        app:srcCompat="@drawable/btn_dark" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="@string/rate_us"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgRateUs"
+        app:layout_constraintEnd_toEndOf="@+id/imgRateUs"
+        app:layout_constraintStart_toStartOf="@+id/imgRateUs"
+        app:layout_constraintTop_toTopOf="@+id/imgRateUs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

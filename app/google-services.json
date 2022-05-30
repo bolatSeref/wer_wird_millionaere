@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "53735416768",
+    "project_id": "millionaire-2021",
+    "storage_bucket": "millionaire-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53735416768:android:081c6a924c45a58ffb1e25",
+        "android_client_info": {
+          "package_name": "com.creactivestudio.millionare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53735416768-iq5ck4qu3cprdjl1fq5kefb6i676ndsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.creactivestudio.millionare",
+            "certificate_hash": "7095feb6b3d37a37a7f5bb567d6d2512f2a0f97c"
+          }
+        },
+        {
+          "client_id": "53735416768-o94cpi12kuh0gnbv99dspovbfeij0fd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL7GOVV2alBtWq2pytrvJQ_Szc8dR8AF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53735416768-o94cpi12kuh0gnbv99dspovbfeij0fd2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "53735416768-5jej1qumc6gejirfgrpn59rdmcv0pho7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.durmazserkan.millionaire"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53735416768:android:6a09c67b475af5f3fb1e25",
+        "android_client_info": {
+          "package_name": "com.creactivestudio.themillionare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53735416768-o94cpi12kuh0gnbv99dspovbfeij0fd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL7GOVV2alBtWq2pytrvJQ_Szc8dR8AF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53735416768-o94cpi12kuh0gnbv99dspovbfeij0fd2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "53735416768-5jej1qumc6gejirfgrpn59rdmcv0pho7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.durmazserkan.millionaire"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

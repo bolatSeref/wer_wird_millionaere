@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+
+   >
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="327dp"
+        android:layout_height="234dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_popup_timeup" />
+
+    <TextView
+        android:id="@+id/tvTimeUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/time_is_up"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/regular"
+        android:text="@string/if_you_want_to_have_an_extra_30_seconds_use_20_gems_or_watch_a_short_video"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeUp" />
+
+    <ImageView
+        android:id="@+id/imgCloseOneMoreJoker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="21dp"
+        android:onClick="closeTimeUpPopUp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTimeUp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/tvTimeUp"
+        app:srcCompat="@drawable/ic_close" />
+
+    <ImageView
+        android:id="@+id/imgShowRewardOneMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        app:srcCompat="@drawable/btn_video" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="@string/video"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgShowRewardOneMore"
+        app:layout_constraintEnd_toEndOf="@+id/imgShowRewardOneMore"
+        app:layout_constraintStart_toStartOf="@+id/imgShowRewardOneMore"
+        app:layout_constraintTop_toTopOf="@+id/imgShowRewardOneMore" />
+
+    <ImageView
+        android:id="@+id/imgGemsOneMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        app:srcCompat="@drawable/btn_gems" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="@string/gems"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgGemsOneMore"
+        app:layout_constraintEnd_toEndOf="@+id/imgGemsOneMore"
+        app:layout_constraintStart_toStartOf="@+id/imgGemsOneMore"
+        app:layout_constraintTop_toTopOf="@+id/imgGemsOneMore" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

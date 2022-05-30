@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="327dp"
+        android:layout_height="500dp"
+        android:background="@drawable/bg_popup_game_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/area_money"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/tvCurrentPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            android:text="@string/you_won"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/thanks_for_participating"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCurrentPoints" />
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView65"
+            app:srcCompat="@drawable/btn_blue_game_end" />
+
+        <ImageView
+            android:id="@+id/imgShareForGems"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHome"
+            app:srcCompat="@drawable/btn_blue_game_end" />
+
+        <ImageView
+            android:id="@+id/imgReportMistake"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgShareViaWhatsapp"
+            app:srcCompat="@drawable/btn_blue_game_end" />
+
+        <ImageView
+            android:id="@+id/imgNewGamePopUp"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgReportMistake"
+            app:srcCompat="@drawable/btn_green_game_end" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgHome"
+            app:layout_constraintStart_toStartOf="@+id/imgHome"
+            app:layout_constraintTop_toTopOf="@+id/imgHome"
+            app:srcCompat="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="@string/home"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgHome"
+            app:layout_constraintEnd_toEndOf="@+id/imgHome"
+            app:layout_constraintStart_toStartOf="@+id/imgHome"
+            app:layout_constraintTop_toTopOf="@+id/imgHome" />
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareForGems"
+            app:layout_constraintStart_toStartOf="@+id/imgShareForGems"
+            app:layout_constraintTop_toTopOf="@+id/imgShareForGems"
+            app:srcCompat="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="@string/share_for_gems"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareForGems"
+            app:layout_constraintEnd_toEndOf="@+id/imgShareForGems"
+            app:layout_constraintStart_toStartOf="@+id/imgShareForGems"
+            app:layout_constraintTop_toTopOf="@+id/imgShareForGems" />
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareForGems"
+            app:layout_constraintEnd_toEndOf="@+id/imgShareForGems"
+            app:layout_constraintTop_toTopOf="@+id/imgShareForGems"
+            app:srcCompat="@drawable/ic_gem" />
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgReportMistake"
+            app:layout_constraintStart_toStartOf="@+id/imgReportMistake"
+            app:layout_constraintTop_toTopOf="@+id/imgReportMistake"
+            app:srcCompat="@drawable/ic_report_mistake" />
+
+        <TextView
+            android:id="@+id/textView68"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:text="@string/report_a_mistake"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgReportMistake"
+            app:layout_constraintEnd_toEndOf="@+id/imgReportMistake"
+            app:layout_constraintStart_toStartOf="@+id/imgReportMistake"
+            app:layout_constraintTop_toTopOf="@+id/imgReportMistake" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/new_game_text"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNewGamePopUp"
+            app:layout_constraintEnd_toEndOf="@+id/imgNewGamePopUp"
+            app:layout_constraintStart_toStartOf="@+id/imgNewGamePopUp"
+            app:layout_constraintTop_toTopOf="@+id/imgNewGamePopUp" />
+
+        <ImageView
+            android:id="@+id/imgShareViaWhatsapp"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgShareForGems"
+            app:srcCompat="@drawable/btn_blue_game_end" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareViaWhatsapp"
+            app:layout_constraintStart_toStartOf="@+id/imgShareViaWhatsapp"
+            app:layout_constraintTop_toTopOf="@+id/imgShareViaWhatsapp"
+            app:srcCompat="@drawable/ic_share_1" />
+
+        <TextView
+            android:id="@+id/tvSocialShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="@string/share_via_whatsapp"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareViaWhatsapp"
+            app:layout_constraintEnd_toEndOf="@+id/imgShareViaWhatsapp"
+            app:layout_constraintStart_toStartOf="@+id/imgShareViaWhatsapp"
+            app:layout_constraintTop_toTopOf="@+id/imgShareViaWhatsapp" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShareViaWhatsapp"
+            app:layout_constraintEnd_toEndOf="@+id/imgShareViaWhatsapp"
+            app:layout_constraintTop_toTopOf="@+id/imgShareViaWhatsapp"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/gems_mar2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

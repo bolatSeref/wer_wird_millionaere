@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_popup_lang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgSelectEnglishPopUp"
+            android:layout_width="70dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="languageSelected"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_english" />
+
+        <TextView
+            android:id="@+id/tvSelectEnglishPopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/bold"
+            android:onClick="languageSelected"
+            android:text="@string/english"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imgSelectEnglishPopUp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgSelectTurkishPopUp"
+            android:layout_width="70dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="languageSelected"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSelectEnglishPopUp"
+            app:srcCompat="@drawable/img_turkish" />
+
+        <TextView
+            android:id="@+id/tvSelectTurkishPopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bold"
+            android:onClick="languageSelected"
+            android:text="@string/turkish"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imgSelectTurkishPopUp"
+            app:layout_constraintTop_toTopOf="@+id/imgSelectTurkishPopUp" />
+
+        <ImageView
+            android:id="@+id/imgClosePopUpPopUp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="closeClick"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/btn_popup_lang" />
+
+        <TextView
+            android:id="@+id/textView39PopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/close"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgClosePopUpPopUp"
+            app:layout_constraintEnd_toEndOf="@+id/imgClosePopUpPopUp"
+            app:layout_constraintStart_toStartOf="@+id/imgClosePopUpPopUp"
+            app:layout_constraintTop_toTopOf="@+id/imgClosePopUpPopUp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

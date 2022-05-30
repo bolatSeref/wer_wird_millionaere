@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.creactivestudio.themillionare">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Millionare">
+        <service
+            android:name="com.creactivestudio.themillionare.audio.AudioPlayServiceGameActivity"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.creactivestudio.themillionare.audio.AudioPlayService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.creactivestudio.themillionare.score_board.ScoreBoardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.creactivestudio.themillionare.user_inputs.ReportMistakeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.creactivestudio.themillionare.MarketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.creactivestudio.themillionare.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.creactivestudio.themillionare.login.ConnectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.creactivestudio.themillionare.settings.SelectLanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.creactivestudio.themillionare.user_inputs.SendQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.creactivestudio.themillionare.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.creactivestudio.themillionare.GameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.creactivestudio.themillionare.CurrentLevelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.creactivestudio.themillionare.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.creactivestudio.themillionare.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.creactivestudio.themillionare.UpdateService" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1196711821351135~3948624037" />
+    </application>
+
+</manifest>
